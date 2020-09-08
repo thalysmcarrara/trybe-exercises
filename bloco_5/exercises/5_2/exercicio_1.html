@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="paiDoPai">
+        <div id="pai">
+          <div id="primeiroFilho"></div>
+          <div id="elementoOndeVoceEsta">
+            <div id="primeiroFilhoDoFilho"></div>
+            <div id="segundoEUltimoFilhoDoFilho"></div>
+          </div>
+          Atenção!
+          <div id="terceiroFilho"></div>
+          <div id="quartoEUltimoFilho"></div>
+        </div>
+      </div>
+
+      <script>
+        console.log(document.querySelector('#primeiroFilhoDoFilho').parentNode)
+        document.querySelector('#elementoOndeVoceEsta').parentElement.style.color = "red";
+        console.log(document.querySelector('#elementoOndeVoceEsta').parentNode)
+        let test = document.querySelector("#primeiroFilhoDoFilho")
+        test.innerText = "oi!!"
+        document.querySelector("#pai").children[0]
+
+        let test2 = document.querySelector("#elementoOndeVoceEsta").previousElementSibling
+
+        console.log(test2)
+
+        let test3 = document.querySelector("#elementoOndeVoceEsta").nextSibling
+
+        console.log(test3)
+
+        let test4 = document.querySelector("#elementoOndeVoceEsta").nextElementSibling
+
+        console.log(test4)
+
+        let test5 = document.querySelector("#pai").children[2]
+
+        console.log(test5)
+
+        
+
+
+      </script>
+</body>
+</html>
